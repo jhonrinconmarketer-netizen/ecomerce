@@ -1,1 +1,10 @@
-{\n  "build": {\n    "env": {\n      "NODE_ENV": "production"\n    }\n  }\n}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
